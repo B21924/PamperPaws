@@ -20,8 +20,8 @@ public interface VisitService {
 
     // 🔥 ADD THIS (for frontend dashboard)
     List<VisitResponseDTO> getVisitsByCustomer(Long customerId);
-    
+
+    List<VisitResponseDTO> getVisitsByVet(Long vetId);
+
     List<VisitResponseDTO> getVisitsByVetAndDate(Long vetId, String date);
-    
-   
 }

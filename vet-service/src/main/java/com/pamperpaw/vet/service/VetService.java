@@ -13,6 +13,8 @@ public interface VetService {
 
     VetDTO getVetById(Long id);
 
+    VetDTO getVetByUsername(String username);
+
     VetDTO updateVet(Long id, VetDTO dto);
 
     void deleteVet(Long id);

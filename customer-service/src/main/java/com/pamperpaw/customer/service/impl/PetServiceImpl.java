@@ -64,6 +64,7 @@ public class PetServiceImpl implements PetService {
         pet.setName(dto.getName());
         pet.setType(dto.getType());
         pet.setAge(dto.getAge());
+        pet.setImageUrl(dto.getImageUrl());
 
         Pet updated = petRepo.save(pet);
 

@@ -20,6 +20,10 @@ public class Vet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false, unique = true)
+    @NotBlank(message = "Username is required")
+    private String username;
+
     @NotBlank(message = "Name is required")
     private String name;
 

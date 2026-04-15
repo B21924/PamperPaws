@@ -46,8 +46,13 @@ public class VisitController {
     public List<VisitResponseDTO> getVisitsByCustomer(@PathVariable Long customerId) {
         return service.getVisitsByCustomer(customerId);
     }
-    
+
     @GetMapping("/vet/{vetId}")
+    public List<VisitResponseDTO> getVisitsByVet(@PathVariable Long vetId) {
+        return service.getVisitsByVet(vetId);
+    }
+
+    @GetMapping(value = "/vet/{vetId}", params = "date")
     public List<VisitResponseDTO> getVisitsByVetAndDate(
             @PathVariable Long vetId,
             @RequestParam String date) {

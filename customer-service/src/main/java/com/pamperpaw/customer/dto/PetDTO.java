@@ -15,6 +15,8 @@ public class PetDTO {
     @Min(value = 0, message = "Age cannot be negative")
     private int age;
 
+    private String imageUrl;
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
@@ -26,4 +28,7 @@ public class PetDTO {
 
     public int getAge() { return age; }
     public void setAge(int age) { this.age = age; }
+
+    public String getImageUrl() { return imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 }

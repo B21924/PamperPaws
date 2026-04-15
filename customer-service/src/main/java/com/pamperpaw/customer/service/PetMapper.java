@@ -12,6 +12,7 @@ public class PetMapper {
         pet.setName(dto.getName());
         pet.setType(dto.getType());
         pet.setAge(dto.getAge());
+        pet.setImageUrl(dto.getImageUrl());
 
         return pet;
     }
@@ -23,6 +24,7 @@ public class PetMapper {
         dto.setName(pet.getName());
         dto.setType(pet.getType());
         dto.setAge(pet.getAge());
+        dto.setImageUrl(pet.getImageUrl());
 
         return dto;
     }

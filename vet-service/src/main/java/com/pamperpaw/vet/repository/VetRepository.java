@@ -3,6 +3,7 @@ package com.pamperpaw.vet.repository;
 
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -17,5 +18,7 @@ public interface VetRepository extends JpaRepository<Vet, Long> {
 	List<Vet> findByClinicAddress(String clinicAddress);
 
 	List<Vet> findByExperienceGreaterThanEqual(int experience);
+
+	Optional<Vet> findByUsername(String username);
 
 }

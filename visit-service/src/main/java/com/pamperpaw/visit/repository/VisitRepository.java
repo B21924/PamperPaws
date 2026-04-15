@@ -9,5 +9,6 @@ public interface VisitRepository extends JpaRepository<Visit, Long> {
 
     // 🔥 ADD THIS (required for fetching user appointments)
     List<Visit> findByCustomerId(Long customerId);
+    List<Visit> findByVetId(Long vetId);
     List<Visit> findByVetIdAndVisitDate(Long vetId, String visitDate);
 }

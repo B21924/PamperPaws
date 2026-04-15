@@ -11,6 +11,9 @@ public class VetDTO {
 
     private Long id;
 
+    @NotBlank(message = "Username is required")
+    private String username;
+
     @NotBlank(message = "Name is required")
     private String name;
 

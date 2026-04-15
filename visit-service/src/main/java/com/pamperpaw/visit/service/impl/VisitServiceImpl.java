@@ -83,6 +83,16 @@ public class VisitServiceImpl implements VisitService {
                 .toList();
     }
 
+    @Override
+    public List<VisitResponseDTO> getVisitsByVet(Long vetId) {
+        log.info("Fetching visits for vetId={}", vetId);
+
+        return visitRepository.findByVetId(vetId)
+                .stream()
+                .map(this::mapToResponse)
+                .toList();
+    }
+
     private void validateReferences(Long customerId, Long vetId) {
         try {
             customerClient.getCustomerById(customerId);

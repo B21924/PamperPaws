@@ -8,6 +8,7 @@ import lombok.*;
 @Builder
 public class VetDTO {
     private Long id;
+    private String username;
     private String name;
     private String specialization;
     private int experience;

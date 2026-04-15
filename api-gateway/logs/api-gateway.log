@@ -2355,3 +2355,105 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
 
 2026-04-14T23:03:02.572+05:30  INFO 16517 --- [API-GATEWAY] [RMI TCP Connection(36)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-04-15T14:42:55.810+05:30  INFO 15008 --- [API-GATEWAY] [main] c.p.gateway.ApiGatewayApplication        : Starting ApiGatewayApplication using Java 21.0.1 with PID 15008 (D:\PamperPaws\api-gateway\target\classes started by MANOHARA S in D:\PamperPaws\api-gateway)
+2026-04-15T14:42:55.812+05:30  INFO 15008 --- [API-GATEWAY] [main] c.p.gateway.ApiGatewayApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-15T14:42:56.692+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=22baa4d1-fabf-3d57-8ea5-36578b82e7d7
+2026-04-15T14:42:56.932+05:30  WARN 15008 --- [API-GATEWAY] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-04-15T14:42:56.936+05:30  WARN 15008 --- [API-GATEWAY] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-04-15T14:42:56.939+05:30  WARN 15008 --- [API-GATEWAY] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-04-15T14:42:56.942+05:30  WARN 15008 --- [API-GATEWAY] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-04-15T14:42:56.945+05:30  WARN 15008 --- [API-GATEWAY] [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-04-15T14:42:57.270+05:30  INFO 15008 --- [API-GATEWAY] [main] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9a20a078-6f66-474e-b533-702a2b012ac6
+
+2026-04-15T14:42:58.648+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-04-15T14:42:59.082+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-04-15T14:42:59.083+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-04-15T14:43:00.306+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-04-15T14:43:01.373+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-04-15T14:43:01.569+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2026-04-15T14:43:01.878+05:30  INFO 15008 --- [API-GATEWAY] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-04-15T14:43:01.920+05:30  WARN 15008 --- [API-GATEWAY] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T14:43:01.979+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T14:43:02.011+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T14:43:02.018+05:30  INFO 15008 --- [API-GATEWAY] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T14:43:02.041+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T14:43:02.041+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T14:43:02.042+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T14:43:02.042+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T14:43:02.042+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T14:43:02.042+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T14:43:02.042+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T14:43:02.409+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T14:43:02.410+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T14:43:02.417+05:30  INFO 15008 --- [API-GATEWAY] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T14:43:02.423+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776244382422 with initial instances count: 1
+2026-04-15T14:43:02.427+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2026-04-15T14:43:02.427+05:30  INFO 15008 --- [API-GATEWAY] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776244382427, current=UP, previous=STARTING]
+2026-04-15T14:43:02.432+05:30  INFO 15008 --- [API-GATEWAY] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:API-GATEWAY:8087: registering service...
+2026-04-15T14:43:02.508+05:30  INFO 15008 --- [API-GATEWAY] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:API-GATEWAY:8087 - registration status: 204
+2026-04-15T14:43:02.623+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8087
+2026-04-15T14:43:02.625+05:30  INFO 15008 --- [API-GATEWAY] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8087
+2026-04-15T14:43:03.645+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-04-15T14:43:04.667+05:30  INFO 15008 --- [API-GATEWAY] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-04-15T14:43:04.718+05:30  INFO 15008 --- [API-GATEWAY] [main] c.p.gateway.ApiGatewayApplication        : Started ApiGatewayApplication in 10.264 seconds (process running for 10.839)
+2026-04-15T14:44:27.294+05:30  INFO 15008 --- [API-GATEWAY] [parallel-5] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /customers
+2026-04-15T14:44:27.321+05:30  WARN 15008 --- [API-GATEWAY] [parallel-5] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: CUSTOMER-SERVICE
+2026-04-15T14:48:02.060+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T14:53:02.066+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T14:56:08.651+05:30  INFO 15008 --- [API-GATEWAY] [parallel-11] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /customers
+2026-04-15T14:56:36.889+05:30  INFO 15008 --- [API-GATEWAY] [parallel-4] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /customers/username/manu
+2026-04-15T14:56:36.995+05:30  INFO 15008 --- [API-GATEWAY] [parallel-7] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /pets/customer/5
+2026-04-15T14:56:37.006+05:30  INFO 15008 --- [API-GATEWAY] [parallel-8] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /visit/customer/5
+2026-04-15T14:56:37.496+05:30  WARN 15008 --- [API-GATEWAY] [parallel-8] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: VISIT-SERVICE
+2026-04-15T14:57:10.360+05:30  INFO 15008 --- [API-GATEWAY] [parallel-11] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /pets/customer/5
+2026-04-15T14:57:10.466+05:30  INFO 15008 --- [API-GATEWAY] [parallel-1] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /pets/customer/5
+2026-04-15T14:58:02.070+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:00:13.013+05:30  INFO 15008 --- [API-GATEWAY] [parallel-6] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /customers/username/manu
+2026-04-15T15:00:13.163+05:30  INFO 15008 --- [API-GATEWAY] [parallel-10] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /visit/customer/5
+2026-04-15T15:00:13.163+05:30  INFO 15008 --- [API-GATEWAY] [parallel-11] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /pets/customer/5
+2026-04-15T15:00:13.179+05:30  WARN 15008 --- [API-GATEWAY] [parallel-10] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: VISIT-SERVICE
+2026-04-15T15:03:02.084+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:08:02.097+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:13:02.107+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:18:02.123+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:23:02.126+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:28:02.134+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:33:02.141+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:38:02.149+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:43:02.157+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:48:02.169+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:53:02.184+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T15:58:02.198+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:03:02.204+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:08:02.213+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:13:02.214+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:18:02.228+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:23:02.237+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:28:02.249+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:33:02.266+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:38:02.266+05:30  INFO 15008 --- [API-GATEWAY] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T16:39:46.935+05:30  INFO 15008 --- [API-GATEWAY] [parallel-2] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /customers/username/manu
+2026-04-15T16:39:47.756+05:30  INFO 15008 --- [API-GATEWAY] [parallel-6] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /pets/customer/5
+2026-04-15T16:39:47.764+05:30  INFO 15008 --- [API-GATEWAY] [parallel-7] com.pamperpaw.gateway.filter.JwtFilter   : Incoming request path: /visit/customer/5
+2026-04-15T16:39:47.873+05:30  WARN 15008 --- [API-GATEWAY] [parallel-6] com.pamperpaw.gateway.filter.JwtFilter   : Invalid token for path=/pets/customer/5
+2026-04-15T16:39:47.874+05:30  WARN 15008 --- [API-GATEWAY] [parallel-7] com.pamperpaw.gateway.filter.JwtFilter   : Invalid token for path=/visit/customer/5
+2026-04-15T16:40:25.340+05:30  INFO 15008 --- [API-GATEWAY] [RMI TCP Connection(129)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-04-15T16:40:25.378+05:30  INFO 15008 --- [API-GATEWAY] [RMI TCP Connection(129)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2026-04-15T16:40:25.379+05:30  INFO 15008 --- [API-GATEWAY] [RMI TCP Connection(129)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776251425379, current=DOWN, previous=UP]
+2026-04-15T16:40:25.379+05:30  INFO 15008 --- [API-GATEWAY] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:API-GATEWAY:8087: registering service...
+2026-04-15T16:40:25.398+05:30  INFO 15008 --- [API-GATEWAY] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:API-GATEWAY:8087 - registration status: 204
+2026-04-15T16:40:27.497+05:30  INFO 15008 --- [API-GATEWAY] [RMI TCP Connection(129)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

@@ -24,6 +24,7 @@ public class VetServiceImpl implements VetService {
     private VetDTO mapToDTO(Vet vet) {
         return VetDTO.builder()
                 .id(vet.getId())
+                .username(vet.getUsername())
                 .name(vet.getName())
                 .specialization(vet.getSpecialization())
                 .experience(vet.getExperience())
@@ -38,6 +39,7 @@ public class VetServiceImpl implements VetService {
     private Vet mapToEntity(VetDTO dto) {
         return Vet.builder()
                 .id(dto.getId())
+                .username(dto.getUsername())
                 .name(dto.getName())
                 .specialization(dto.getSpecialization())
                 .experience(dto.getExperience())
@@ -72,10 +74,18 @@ public class VetServiceImpl implements VetService {
     }
 
     @Override
+    public VetDTO getVetByUsername(String username) {
+        Vet vet = vetRepository.findByUsername(username)
+                .orElseThrow(() -> new VetNotFoundException("Vet not found with username " + username));
+        return mapToDTO(vet);
+    }
+
+    @Override
     public VetDTO updateVet(Long id, VetDTO dto) {
         Vet vet = vetRepository.findById(id)
                 .orElseThrow(() -> new VetNotFoundException("Vet not found with id " + id));
 
+        vet.setUsername(dto.getUsername());
         vet.setName(dto.getName());
         vet.setSpecialization(dto.getSpecialization());
         vet.setExperience(dto.getExperience());

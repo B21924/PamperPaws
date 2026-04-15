@@ -1,0 +1,90 @@
+<section class="page-stack">
+  <div class="page-hero compact">
+    <div>
+      <span class="eyebrow">Appointments</span>
+      <h1>Book and track care visits.</h1>
+      <p>
+        Choose a veterinarian, pick from live time slots, and review your visit
+        schedule in one place.
+      </p>
+    </div>
+  </div>
+
+  <div class="content-grid two">
+    <article class="section-card sticky-form">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">New booking</span>
+          <h2>Reserve a time slot</h2>
+        </div>
+      </div>
+
+      <form class="app-form" [formGroup]="form" (ngSubmit)="bookAppointment()">
+        <label class="field">
+          <span>Veterinarian</span>
+          <select formControlName="vetId" (change)="loadSlots()">
+            <option value="">Select a veterinarian</option>
+            <option *ngFor="let vet of vetsList()" [value]="vet.id">
+              {{ vet.name }} · {{ vet.specialization }}
+            </option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Date</span>
+          <input type="date" formControlName="visitDate" [min]="todayDate()" (change)="loadSlots()" />
+        </label>
+
+        <label class="field">
+          <span>Available time slot</span>
+          <select formControlName="timeSlot">
+            <option value="">Select a slot</option>
+            <option *ngFor="let slot of timeSlots()" [value]="slot">{{ slot }}</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Reason for visit</span>
+          <textarea formControlName="reason" rows="4" placeholder="Describe the consultation, concern, or follow-up need"></textarea>
+        </label>
+
+        <p class="form-message success" *ngIf="statusMessage()">{{ statusMessage() }}</p>
+        <p class="form-message error" *ngIf="errorMessage()">{{ errorMessage() }}</p>
+
+        <button class="primary-button block" type="submit">
+          {{ saving() ? 'Booking...' : 'Book appointment' }}
+        </button>
+      </form>
+    </article>
+
+    <article class="section-card">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Schedule</span>
+          <h2>Your bookings</h2>
+        </div>
+      </div>
+
+      <div class="timeline-list" *ngIf="upcomingAppointments().length; else noBookings">
+        <article class="timeline-item" *ngFor="let visit of upcomingAppointments()">
+          <div class="timeline-date">
+            <strong>{{ visit.visitDate | date: 'dd' }}</strong>
+            <span>{{ visit.visitDate | date: 'MMM' }}</span>
+          </div>
+          <div class="timeline-copy">
+            <strong>{{ vetName(visit.vetId) }}</strong>
+            <span>{{ visit.timeSlot }}</span>
+            <p>{{ visit.reason }}</p>
+          </div>
+        </article>
+      </div>
+
+      <ng-template #noBookings>
+        <div class="empty-state">
+          <strong>No bookings yet</strong>
+          <span>Your scheduled visits will show up here after booking.</span>
+        </div>
+      </ng-template>
+    </article>
+  </div>
+</section>

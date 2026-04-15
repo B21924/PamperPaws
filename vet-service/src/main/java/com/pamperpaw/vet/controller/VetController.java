@@ -32,6 +32,11 @@ public class VetController {
         return vetService.getVetById(id);
     }
 
+    @GetMapping("/username/{username}")
+    public VetDTO getVetByUsername(@PathVariable String username) {
+        return vetService.getVetByUsername(username);
+    }
+
     @PutMapping("/{id}")
     public VetDTO updateVet(@PathVariable Long id, @Valid @RequestBody VetDTO dto) {
         return vetService.updateVet(id, dto);

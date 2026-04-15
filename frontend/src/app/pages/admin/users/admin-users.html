@@ -1,0 +1,83 @@
+<section class="page-stack">
+  <div class="page-hero compact">
+    <div>
+      <span class="eyebrow">User management</span>
+      <h1>Review customer and veterinarian directories.</h1>
+      <p>The admin view focuses on visibility and operational context.</p>
+    </div>
+  </div>
+
+  <div class="content-grid two">
+    <article class="section-card">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Customers</span>
+          <h2>Customer accounts</h2>
+        </div>
+        <span class="pill">{{ customers().length }}</span>
+      </div>
+
+      <div class="table-card" *ngIf="customers().length; else noCustomers">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let customer of customers()">
+              <td>{{ customer.name }}</td>
+              <td>{{ customer.email }}</td>
+              <td>{{ customer.phone }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ng-template #noCustomers>
+        <div class="empty-state compact">
+          <strong>No customers found</strong>
+          <span>Customer accounts will appear here when available.</span>
+        </div>
+      </ng-template>
+    </article>
+
+    <article class="section-card accent">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Veterinarians</span>
+          <h2>Vet directory</h2>
+        </div>
+        <span class="pill">{{ vets().length }}</span>
+      </div>
+
+      <div class="table-card" *ngIf="vets().length; else noVets">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Specialization</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let vet of vets()">
+              <td>{{ vet.name }}</td>
+              <td>{{ vet.specialization }}</td>
+              <td>{{ vet.phone }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ng-template #noVets>
+        <div class="empty-state compact">
+          <strong>No veterinarians found</strong>
+          <span>Vet accounts will appear here when available.</span>
+        </div>
+      </ng-template>
+    </article>
+  </div>
+</section>
