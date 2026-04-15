@@ -1,0 +1,127 @@
+/* FULL PAGE LAYOUT */
+.login-page {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* LEFT SIDE IMAGE */
+.login-left {
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8')
+              no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-left .overlay {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.login-left h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+/* RIGHT SIDE FORM */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7f7;
+}
+
+/* LOGIN BOX */
+.login-box {
+  width: 320px;
+  padding: 35px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* TITLE */
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUT FIELDS */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+/* INPUT FOCUS */
+.login-box input:focus {
+  border-color: #d4dcda;
+  box-shadow: 0 0 5px #d4dcda;
+}
+
+/* BUTTON */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #cb0808;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+
+  display: block;
+  margin: 15px auto 0;
+}
+
+.login-box button:hover {
+  background: #9c1515;
+}
+
+/* LINK */
+.login-box a {
+  color: #cb0808;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* LEFT SIDE IMAGE */
+.login-left {
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b')
+              no-repeat center center/cover;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+
+  background: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #d7dedc;
+}

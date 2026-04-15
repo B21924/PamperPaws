@@ -1,0 +1,43 @@
+<a routerLink="/" class="back-btn">← Back</a>
+
+<div class="login-page">
+
+ <!-- LEFT IMAGE SLIDER -->
+<div class="login-left">
+  <div class="slider">
+    <div class="slide active"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+  </div>
+</div>
+
+  <!-- RIGHT FORM -->
+  <div class="login-right">
+    <div class="login-box">
+      <h2>Welcome Back 🐾</h2>
+
+      <form (ngSubmit)="login()">
+        <input type="text"
+               [(ngModel)]="user.username"
+               name="username"
+               placeholder="Username"
+               required />
+
+        <input type="password"
+               [(ngModel)]="user.password"
+               name="password"
+               placeholder="Password"
+               required />
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p>
+        New user?
+        <a routerLink="/register">Register here</a>
+      </p>
+    </div>
+  </div>
+
+</div>

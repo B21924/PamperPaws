@@ -1,0 +1,874 @@
+2026-04-14T12:28:07.535+05:30  INFO 5341 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 20.0.1 with PID 5341 (/Users/bhanukavitha/Desktop/13THAPRILUPDATED/discovery-server/target/classes started by bhanukavitha in /Users/bhanukavitha/Desktop/13THAPRILUPDATED/discovery-server)
+2026-04-14T12:28:07.537+05:30  INFO 5341 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-04-14T12:28:08.130+05:30  INFO 5341 --- [discovery-server] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fbd0a44d-f390-3015-8b0d-c9eb8b5c1d39
+2026-04-14T12:28:08.164+05:30  WARN 5341 --- [discovery-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-04-14T12:28:08.166+05:30  WARN 5341 --- [discovery-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-04-14T12:28:08.284+05:30  INFO 5341 --- [discovery-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-04-14T12:28:08.292+05:30  INFO 5341 --- [discovery-server] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-14T12:28:08.292+05:30  INFO 5341 --- [discovery-server] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-14T12:28:08.323+05:30  INFO 5341 --- [discovery-server] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-14T12:28:08.324+05:30  INFO 5341 --- [discovery-server] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2026-04-14T12:28:08.821+05:30  INFO 5341 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-14T12:28:08.822+05:30  INFO 5341 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-14T12:28:08.932+05:30  INFO 5341 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-14T12:28:08.933+05:30  INFO 5341 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-14T12:28:09.413+05:30  WARN 5341 --- [discovery-server] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-14T12:28:09.423+05:30  INFO 5341 --- [discovery-server] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-14T12:28:09.439+05:30  INFO 5341 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-14T12:28:09.439+05:30  INFO 5341 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-04-14T12:28:09.444+05:30  INFO 5341 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776149889443 with initial instances count: 0
+2026-04-14T12:28:09.464+05:30  INFO 5341 --- [discovery-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-04-14T12:28:09.465+05:30  INFO 5341 --- [discovery-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-04-14T12:28:09.544+05:30  INFO 5341 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-14T12:28:09.544+05:30  INFO 5341 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-14T12:28:09.544+05:30  INFO 5341 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-14T12:28:09.544+05:30  INFO 5341 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-14T12:28:09.567+05:30  INFO 5341 --- [discovery-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-04-14T12:28:09.571+05:30  INFO 5341 --- [discovery-server] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-04-14T12:28:09.572+05:30  INFO 5341 --- [discovery-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-04-14T12:28:09.577+05:30  INFO 5341 --- [discovery-server] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2026-04-14T12:28:09.618+05:30  INFO 5341 --- [discovery-server] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-04-14T12:28:09.625+05:30  INFO 5341 --- [discovery-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-04-14T12:28:09.625+05:30  INFO 5341 --- [discovery-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-04-14T12:28:09.626+05:30  INFO 5341 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-04-14T12:28:09.626+05:30  INFO 5341 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-04-14T12:28:09.626+05:30  INFO 5341 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-04-14T12:28:09.630+05:30  INFO 5341 --- [discovery-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path ''
+2026-04-14T12:28:09.630+05:30  INFO 5341 --- [discovery-server] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-04-14T12:28:09.631+05:30  INFO 5341 --- [discovery-server] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-04-14T12:28:09.648+05:30  INFO 5341 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 2.407 seconds (process running for 7.898)
+2026-04-14T12:28:15.109+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-14T12:28:15.109+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-14T12:28:15.110+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-14T12:28:55.494+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.70.215.114:auth-service:8086 with status UP (replication=false)
+2026-04-14T12:28:56.083+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.70.215.114:auth-service:8086 with status UP (replication=true)
+2026-04-14T12:29:09.176+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T12:29:09.627+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T12:29:09.688+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T12:30:09.634+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T12:31:09.637+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T12:32:09.641+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T12:33:09.645+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T12:34:09.649+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T12:35:09.654+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T12:36:09.660+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T12:37:09.666+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T12:38:09.667+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2026-04-14T12:39:09.670+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T12:40:09.673+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T12:41:09.674+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T12:42:09.676+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T12:43:09.579+05:30  INFO 5341 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2026-04-14T12:43:09.681+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T12:44:09.687+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T12:45:09.693+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T12:46:09.698+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T12:47:09.704+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T12:48:09.710+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T12:49:09.714+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T12:50:09.717+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T12:51:09.723+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T12:52:09.728+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T12:53:09.730+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T12:54:09.736+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T13:00:07.656+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T13:00:07.659+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2026-04-14T13:00:07.660+05:30  WARN 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for API-GATEWAY/10.70.215.114:API-GATEWAY:8087
+2026-04-14T13:00:07.681+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 (replication=false)
+2026-04-14T13:00:08.076+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T13:00:08.076+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T13:00:08.172+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T13:00:08.686+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T13:06:06.007+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T13:12:03.887+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-04-14T13:40:22.602+05:30  INFO 5341 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2026-04-14T13:40:22.768+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-04-14T13:40:22.768+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=2, evictionLimit=1)
+2026-04-14T13:40:22.768+05:30  WARN 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for AUTH-SERVICE/10.70.215.114:auth-service:8086
+2026-04-14T13:40:22.769+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/10.70.215.114:auth-service:8086 (replication=false)
+2026-04-14T13:40:39.622+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: AUTH-SERVICE - 10.70.215.114:auth-service:8086
+2026-04-14T13:40:39.623+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Renew): AUTH-SERVICE - 10.70.215.114:auth-service:8086
+2026-04-14T13:40:39.641+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.70.215.114:auth-service:8086 with status UP (replication=false)
+2026-04-14T13:40:40.158+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.70.215.114:auth-service:8086 with status UP (replication=true)
+2026-04-14T13:56:47.664+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-04-14T13:56:47.665+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2026-04-14T13:56:47.665+05:30  WARN 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for API-GATEWAY/10.70.215.114:API-GATEWAY:8087
+2026-04-14T13:56:47.667+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 (replication=false)
+2026-04-14T13:56:48.387+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T13:56:48.388+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T13:56:48.403+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T13:56:48.917+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T13:57:47.670+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T13:58:47.673+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T13:59:47.681+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2026-04-14T14:00:47.692+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-04-14T14:01:47.692+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T14:02:47.702+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-04-14T14:03:47.709+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T14:04:47.710+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T14:21:05.261+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2026-04-14T14:22:05.263+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T14:36:16.723+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-04-14T14:37:16.723+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-04-14T14:38:16.724+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T14:39:16.485+05:30  INFO 5341 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2026-04-14T14:39:16.731+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-04-14T14:45:15.070+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T14:45:15.072+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=2, evictionLimit=1)
+2026-04-14T14:45:15.072+05:30  WARN 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for API-GATEWAY/10.70.215.114:API-GATEWAY:8087
+2026-04-14T14:45:15.074+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 (replication=false)
+2026-04-14T14:45:16.229+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T14:45:16.230+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T14:45:16.277+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T14:45:16.799+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T14:46:15.076+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T14:47:15.083+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2026-04-14T14:48:15.094+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2026-04-14T14:55:47.247+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T14:55:47.248+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2026-04-14T14:55:47.249+05:30  WARN 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for API-GATEWAY/10.70.215.114:API-GATEWAY:8087
+2026-04-14T14:55:47.251+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 (replication=false)
+2026-04-14T14:55:48.584+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T14:55:48.584+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T14:55:48.598+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T14:55:49.115+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T15:12:12.232+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T15:12:12.234+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2026-04-14T15:12:12.235+05:30  WARN 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for API-GATEWAY/10.70.215.114:API-GATEWAY:8087
+2026-04-14T15:12:12.236+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 (replication=false)
+2026-04-14T15:12:13.637+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T15:12:13.638+05:30  WARN 5341 --- [discovery-server] [http-nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 10.70.215.114:API-GATEWAY:8087
+2026-04-14T15:12:13.652+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T15:12:14.170+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T15:20:41.155+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-04-14T15:21:41.157+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T15:22:41.159+05:30  INFO 5341 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T15:22:41.568+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status DOWN (replication=false)
+2026-04-14T15:22:42.087+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.70.215.114:API-GATEWAY:8087 with status DOWN (replication=true)
+2026-04-14T15:22:50.093+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.70.215.114:auth-service:8086 with status DOWN (replication=false)
+2026-04-14T15:22:50.610+05:30  INFO 5341 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.70.215.114:auth-service:8086 with status DOWN (replication=true)
+2026-04-14T15:23:01.748+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-04-14T15:23:01.752+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2026-04-14T15:23:01.765+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-04-14T15:23:01.770+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-04-14T15:23:01.772+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2026-04-14T15:23:01.773+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2026-04-14T15:23:01.774+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2026-04-14T15:23:01.774+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2026-04-14T15:23:01.775+05:30 ERROR 5341 --- [discovery-server] [Eureka-Jersey3Client-Conn-Cleaner2] c.n.d.s.t.j.EurekaJersey3ClientImpl      : Cannot clean connections
+
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.6.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.6.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.6.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.6.jar:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:347) ~[eureka-client-jersey3-2.0.2.jar:2.0.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2026-04-14T15:23:01.785+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-04-14T15:23:01.785+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-04-14T15:23:01.786+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-04-14T15:23:01.789+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-04-14T15:23:01.795+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-04-14T15:23:01.796+05:30  INFO 5341 --- [discovery-server] [RMI TCP Connection(67)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-04-14T15:41:28.885+05:30  INFO 6942 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 20.0.1 with PID 6942 (/Users/bhanukavitha/Desktop/13THAPRILUPDATED/discovery-server/target/classes started by bhanukavitha in /Users/bhanukavitha/Desktop/13THAPRILUPDATED/discovery-server)
+2026-04-14T15:41:28.886+05:30  INFO 6942 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-04-14T15:41:29.471+05:30  INFO 6942 --- [discovery-server] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fbd0a44d-f390-3015-8b0d-c9eb8b5c1d39
+2026-04-14T15:41:29.500+05:30  WARN 6942 --- [discovery-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-04-14T15:41:29.501+05:30  WARN 6942 --- [discovery-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-04-14T15:41:29.626+05:30  INFO 6942 --- [discovery-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-04-14T15:41:29.634+05:30  INFO 6942 --- [discovery-server] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-14T15:41:29.634+05:30  INFO 6942 --- [discovery-server] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-14T15:41:29.666+05:30  INFO 6942 --- [discovery-server] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-14T15:41:29.666+05:30  INFO 6942 --- [discovery-server] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 756 ms
+2026-04-14T15:41:30.162+05:30  INFO 6942 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-14T15:41:30.162+05:30  INFO 6942 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-14T15:41:30.273+05:30  INFO 6942 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-14T15:41:30.273+05:30  INFO 6942 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-14T15:41:30.750+05:30  WARN 6942 --- [discovery-server] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-14T15:41:30.760+05:30  INFO 6942 --- [discovery-server] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-14T15:41:30.777+05:30  INFO 6942 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-14T15:41:30.777+05:30  INFO 6942 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-04-14T15:41:30.782+05:30  INFO 6942 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776161490782 with initial instances count: 0
+2026-04-14T15:41:30.802+05:30  INFO 6942 --- [discovery-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-04-14T15:41:30.803+05:30  INFO 6942 --- [discovery-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-04-14T15:41:30.879+05:30  INFO 6942 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-14T15:41:30.879+05:30  INFO 6942 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-14T15:41:30.879+05:30  INFO 6942 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-14T15:41:30.879+05:30  INFO 6942 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-14T15:41:30.909+05:30  INFO 6942 --- [discovery-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-04-14T15:41:30.913+05:30  INFO 6942 --- [discovery-server] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-04-14T15:41:30.913+05:30  INFO 6942 --- [discovery-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-04-14T15:41:30.919+05:30  INFO 6942 --- [discovery-server] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2026-04-14T15:41:30.960+05:30  INFO 6942 --- [discovery-server] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-04-14T15:41:30.967+05:30  INFO 6942 --- [discovery-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-04-14T15:41:30.967+05:30  INFO 6942 --- [discovery-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-04-14T15:41:30.967+05:30  INFO 6942 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-04-14T15:41:30.967+05:30  INFO 6942 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-04-14T15:41:30.967+05:30  INFO 6942 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-04-14T15:41:30.971+05:30  INFO 6942 --- [discovery-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path ''
+2026-04-14T15:41:30.972+05:30  INFO 6942 --- [discovery-server] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-04-14T15:41:30.972+05:30  INFO 6942 --- [discovery-server] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-04-14T15:41:30.989+05:30  INFO 6942 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 2.362 seconds (process running for 7.845)
+2026-04-14T15:41:31.403+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-14T15:41:31.403+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-14T15:41:31.404+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-14T15:41:51.549+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status UP (replication=false)
+2026-04-14T15:41:52.140+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status UP (replication=true)
+2026-04-14T15:42:07.240+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T15:42:07.752+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T15:42:30.972+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T15:43:30.973+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T15:44:30.978+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T15:45:30.983+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T15:46:30.986+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T15:47:30.986+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T15:48:30.992+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T15:49:30.998+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T15:50:31.004+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T15:51:31.008+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T15:52:31.012+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T15:53:31.018+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T15:54:31.019+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T15:55:31.025+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T15:56:30.924+05:30  INFO 6942 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2026-04-14T15:56:31.029+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T15:57:31.034+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T15:58:31.038+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T15:59:31.043+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:00:31.049+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:01:31.054+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:02:31.058+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T16:03:31.063+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:04:31.069+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:05:31.074+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:06:31.074+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T16:07:31.074+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 28ms
+2026-04-14T16:08:31.079+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:09:31.082+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T16:10:31.087+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:11:30.928+05:30  INFO 6942 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2026-04-14T16:11:31.092+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:12:31.097+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:13:31.102+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:14:31.106+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T16:15:31.111+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:16:31.117+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:17:31.123+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:18:31.127+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:19:31.132+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:19:48.695+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T16:19:49.208+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T16:20:31.137+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:21:31.143+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:22:31.148+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:23:31.149+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T16:24:10.933+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T16:24:11.439+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T16:24:16.109+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T16:24:16.624+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T16:24:31.150+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T16:24:33.633+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T16:24:34.150+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T16:24:35.611+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T16:24:36.120+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T16:25:31.152+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T16:26:30.931+05:30  INFO 6942 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T16:26:31.158+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:27:31.160+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T16:28:31.166+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:29:31.170+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:30:31.176+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:31:31.177+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T16:32:31.177+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T16:33:31.178+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T16:34:31.182+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:35:31.188+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:36:31.194+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T16:37:31.214+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T16:38:31.230+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T16:39:31.234+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T16:40:22.684+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T16:40:23.201+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T16:40:27.851+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=false)
+2026-04-14T16:40:28.360+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=true)
+2026-04-14T16:40:31.237+05:30  INFO 6942 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T16:40:35.521+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status DOWN (replication=false)
+2026-04-14T16:40:36.033+05:30  INFO 6942 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status DOWN (replication=true)
+2026-04-14T16:40:41.550+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-04-14T16:40:41.564+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2026-04-14T16:40:41.592+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-04-14T16:40:41.601+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-04-14T16:40:41.604+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2026-04-14T16:40:41.605+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2026-04-14T16:40:41.605+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2026-04-14T16:40:41.606+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2026-04-14T16:40:41.627+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-04-14T16:40:41.627+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-04-14T16:40:41.628+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-04-14T16:40:41.632+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-04-14T16:40:41.641+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-04-14T16:40:41.643+05:30  INFO 6942 --- [discovery-server] [RMI TCP Connection(64)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-04-14T18:15:24.959+05:30  INFO 10078 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 20.0.1 with PID 10078 (/Users/bhanukavitha/Desktop/13THAPRILUPDATED/discovery-server/target/classes started by bhanukavitha in /Users/bhanukavitha/Desktop/13THAPRILUPDATED/discovery-server)
+2026-04-14T18:15:24.961+05:30  INFO 10078 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-04-14T18:15:25.608+05:30  INFO 10078 --- [discovery-server] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fbd0a44d-f390-3015-8b0d-c9eb8b5c1d39
+2026-04-14T18:15:25.637+05:30  WARN 10078 --- [discovery-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-04-14T18:15:25.639+05:30  WARN 10078 --- [discovery-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-04-14T18:15:25.768+05:30  INFO 10078 --- [discovery-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-04-14T18:15:25.776+05:30  INFO 10078 --- [discovery-server] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-14T18:15:25.777+05:30  INFO 10078 --- [discovery-server] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-14T18:15:25.814+05:30  INFO 10078 --- [discovery-server] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-14T18:15:25.814+05:30  INFO 10078 --- [discovery-server] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 824 ms
+2026-04-14T18:15:26.321+05:30  INFO 10078 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-14T18:15:26.322+05:30  INFO 10078 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-14T18:15:26.434+05:30  INFO 10078 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-14T18:15:26.434+05:30  INFO 10078 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-14T18:15:26.931+05:30  WARN 10078 --- [discovery-server] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-14T18:15:26.941+05:30  INFO 10078 --- [discovery-server] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-14T18:15:26.957+05:30  INFO 10078 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-14T18:15:26.957+05:30  INFO 10078 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-04-14T18:15:26.962+05:30  INFO 10078 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776170726962 with initial instances count: 0
+2026-04-14T18:15:26.984+05:30  INFO 10078 --- [discovery-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-04-14T18:15:26.985+05:30  INFO 10078 --- [discovery-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-04-14T18:15:27.064+05:30  INFO 10078 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-14T18:15:27.064+05:30  INFO 10078 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-14T18:15:27.064+05:30  INFO 10078 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-14T18:15:27.064+05:30  INFO 10078 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-14T18:15:27.088+05:30  INFO 10078 --- [discovery-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-04-14T18:15:27.092+05:30  INFO 10078 --- [discovery-server] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-04-14T18:15:27.092+05:30  INFO 10078 --- [discovery-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-04-14T18:15:27.098+05:30  INFO 10078 --- [discovery-server] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2026-04-14T18:15:27.138+05:30  INFO 10078 --- [discovery-server] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-04-14T18:15:27.145+05:30  INFO 10078 --- [discovery-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-04-14T18:15:27.146+05:30  INFO 10078 --- [discovery-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-04-14T18:15:27.146+05:30  INFO 10078 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-04-14T18:15:27.146+05:30  INFO 10078 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-04-14T18:15:27.146+05:30  INFO 10078 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-04-14T18:15:27.150+05:30  INFO 10078 --- [discovery-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path ''
+2026-04-14T18:15:27.151+05:30  INFO 10078 --- [discovery-server] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-04-14T18:15:27.151+05:30  INFO 10078 --- [discovery-server] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-04-14T18:15:27.168+05:30  INFO 10078 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 2.624 seconds (process running for 8.286)
+2026-04-14T18:15:32.884+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-14T18:15:32.885+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-14T18:15:32.886+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-14T18:16:08.960+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status UP (replication=false)
+2026-04-14T18:16:09.548+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status UP (replication=true)
+2026-04-14T18:16:27.157+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T18:17:27.156+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T18:17:54.741+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:17:55.250+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:18:10.520+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T18:18:11.031+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T18:18:27.162+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:19:27.166+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T18:20:27.169+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T18:21:27.169+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T18:22:27.171+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T18:23:27.175+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T18:24:27.179+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T18:25:27.185+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:26:27.191+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:27:27.196+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:28:27.202+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:29:27.204+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T18:30:27.118+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T18:30:27.210+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:31:27.216+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:32:27.221+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:33:27.226+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:34:27.231+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:34:52.354+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:34:52.872+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:34:58.749+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/localhost:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:34:59.269+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/localhost:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:35:27.236+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:35:32.421+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/localhost:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:35:32.934+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/localhost:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:35:34.736+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:35:35.250+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:36:27.239+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T18:36:50.847+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:36:51.362+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:36:55.965+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:36:56.488+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:36:59.803+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:37:00.313+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:37:18.747+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:37:19.273+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:37:27.240+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T18:37:27.244+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2026-04-14T18:37:27.246+05:30  WARN 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for CUSTOMER-SERVICE/localhost:customer-service:8082
+2026-04-14T18:37:27.271+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CUSTOMER-SERVICE/localhost:customer-service:8082 (replication=false)
+2026-04-14T18:38:27.246+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:39:27.250+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T18:40:27.254+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T18:41:27.263+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2026-04-14T18:42:27.263+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T18:43:27.269+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-04-14T18:44:27.273+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T18:45:17.265+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:45:17.778+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:45:27.124+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T18:45:27.276+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T18:45:37.671+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:45:38.183+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:45:41.531+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=false)
+2026-04-14T18:45:42.045+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=true)
+2026-04-14T18:46:04.115+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T18:46:04.633+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T18:46:27.285+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:47:27.287+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T18:48:27.290+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T18:49:27.291+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T18:50:27.297+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:51:27.302+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:52:27.302+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T18:52:49.395+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:52:49.913+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:52:55.102+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:52:55.613+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:52:56.388+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:52:56.898+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:52:58.324+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:52:58.838+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:53:27.309+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:54:27.313+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:55:27.319+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:56:27.324+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T18:56:33.958+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:56:34.472+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:56:39.152+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:56:39.663+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:56:40.466+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:56:40.983+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:56:42.346+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:56:42.854+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:57:00.307+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T18:57:00.827+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T18:57:27.330+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T18:57:36.182+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T18:57:36.689+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T18:58:27.333+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T18:59:27.348+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:00:27.158+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T19:00:27.355+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:01:27.361+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:02:27.680+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 297ms
+2026-04-14T19:03:27.662+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:04:27.668+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:05:27.674+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:06:27.676+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T19:07:04.464+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T19:07:04.973+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T19:07:09.896+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T19:07:10.413+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T19:07:12.234+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T19:07:12.418+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T19:07:27.683+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:08:01.907+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T19:08:02.420+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T19:08:27.685+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:09:27.690+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:10:27.691+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T19:11:27.697+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:12:27.699+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:13:27.705+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:14:27.710+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:15:27.162+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T19:15:27.713+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:16:27.719+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:17:27.723+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T19:18:27.729+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:19:27.733+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:20:27.739+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 42ms
+2026-04-14T19:21:27.739+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T19:22:27.742+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:23:27.747+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:24:27.749+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:25:27.750+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T19:26:27.755+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:27:27.758+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:28:27.758+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T19:29:27.762+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:30:27.165+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T19:30:27.763+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:31:27.770+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:32:27.770+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T19:33:27.774+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:34:27.776+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T19:35:27.779+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:36:27.784+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:37:27.785+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T19:38:27.789+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T19:39:27.790+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T19:40:27.790+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T19:41:27.795+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 34ms
+2026-04-14T19:42:27.800+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:43:27.804+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:44:27.809+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:45:27.167+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T19:45:27.813+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:46:27.817+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T19:47:27.820+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T19:48:27.821+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T19:49:27.823+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T19:50:27.828+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T19:51:27.833+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:52:27.834+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T19:53:27.835+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T19:54:27.839+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T19:55:27.844+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T19:56:27.846+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T19:57:27.846+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T19:58:27.847+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T19:59:27.852+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:00:27.172+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T20:00:27.856+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:01:27.858+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:02:27.862+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T20:03:27.865+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:04:27.867+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T20:05:27.867+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:06:27.898+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:07:27.912+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:08:27.917+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:09:27.923+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:10:27.925+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T20:11:27.926+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T20:12:27.930+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:13:27.936+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:14:27.940+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:15:27.214+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T20:15:27.945+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:16:27.949+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T20:17:27.954+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:18:27.959+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:19:27.961+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T20:20:27.967+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:21:27.969+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:22:27.974+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:23:27.973+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T20:24:27.978+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:25:27.981+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T20:26:27.986+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:27:28.009+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:28:28.012+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T20:29:28.013+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:30:27.249+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T20:30:28.018+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:31:28.024+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:32:28.027+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:33:28.030+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T20:34:28.031+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T20:35:28.033+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:36:28.038+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T20:37:28.040+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:38:28.046+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:39:28.052+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:40:28.057+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:41:28.061+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T20:42:28.062+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:43:28.064+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:44:28.070+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:45:27.259+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T20:45:28.076+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:46:28.078+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 30ms
+2026-04-14T20:47:28.078+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:53:39.236+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T20:54:39.238+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T20:55:39.240+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T20:56:39.242+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T20:57:39.247+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T20:58:39.252+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T20:59:39.255+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T21:00:39.261+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:01:39.263+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T21:02:39.272+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:03:39.286+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:04:39.290+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T21:05:38.395+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T21:05:39.295+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:06:39.301+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:07:39.301+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:08:39.302+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:09:39.308+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:10:39.312+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:11:39.316+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:12:39.320+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:13:39.319+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T21:14:39.320+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T21:15:39.321+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:16:39.327+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:17:39.332+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:18:39.337+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:19:39.341+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:20:38.398+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T21:20:39.345+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:21:39.369+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:22:39.381+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:23:39.387+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:24:39.393+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:25:39.397+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T21:26:39.402+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:27:39.407+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:28:39.411+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T21:29:39.413+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T21:30:39.415+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T21:31:39.420+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:32:39.421+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:33:39.425+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:34:39.431+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:35:38.431+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2026-04-14T21:35:39.432+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:36:39.438+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:37:39.439+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:38:39.444+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:39:39.449+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T21:40:39.469+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T21:41:39.471+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T21:42:39.477+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:42:59.655+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/localhost:vet-service:8083 with status UP (replication=false)
+2026-04-14T21:43:00.171+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/localhost:vet-service:8083 with status UP (replication=true)
+2026-04-14T21:43:18.239+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T21:43:18.759+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T21:43:39.482+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T21:44:39.487+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:45:39.491+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:46:39.494+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T21:47:39.495+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:48:39.501+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:49:39.507+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:50:38.463+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2026-04-14T21:50:39.513+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:51:39.519+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:52:39.525+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:53:39.529+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:54:39.535+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T21:55:39.537+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T21:56:39.555+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:57:39.561+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T21:58:39.565+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T21:59:39.569+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T22:00:39.570+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T22:01:39.574+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T22:02:39.578+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T22:03:39.584+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:04:39.588+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T22:05:38.487+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2026-04-14T22:05:39.593+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:06:39.595+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T22:07:39.597+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T22:08:39.597+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T22:09:39.603+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:10:23.455+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=false)
+2026-04-14T22:10:23.600+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=true)
+2026-04-14T22:10:23.608+05:30  WARN 10078 --- [discovery-server] [TaskBatchingWorker-target_localhost-19] c.n.eureka.cluster.ReplicationTask       : The replication of task API-GATEWAY/10.0.0.117:API-GATEWAY:8087:Heartbeat@localhost failed with response code 409
+2026-04-14T22:10:23.610+05:30  WARN 10078 --- [discovery-server] [TaskBatchingWorker-target_localhost-19] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.0.0.117:API-GATEWAY:8087 My Timestamp : 1776172564085, Peer's timestamp: 1776184823434
+2026-04-14T22:10:23.611+05:30  INFO 10078 --- [discovery-server] [TaskBatchingWorker-target_localhost-19] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=true)
+2026-04-14T22:10:39.609+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:10:47.250+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T22:10:47.761+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T22:11:39.615+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:12:39.616+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T22:13:39.622+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:14:39.624+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T22:15:39.631+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-04-14T22:16:39.636+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:17:39.641+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:17:52.393+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:17:52.900+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:17:58.052+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:17:58.562+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:17:59.314+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:17:59.818+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:18:04.335+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:18:04.862+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:18:05.661+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:18:06.175+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:18:10.529+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:18:11.036+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:18:39.645+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T22:19:39.650+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:19:54.149+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/localhost:vet-service:8083 with status DOWN (replication=false)
+2026-04-14T22:19:54.665+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/localhost:vet-service:8083 with status DOWN (replication=true)
+2026-04-14T22:19:59.506+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status UP (replication=false)
+2026-04-14T22:20:00.014+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status UP (replication=true)
+2026-04-14T22:20:00.798+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status DOWN (replication=false)
+2026-04-14T22:20:01.308+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status DOWN (replication=true)
+2026-04-14T22:20:05.603+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status UP (replication=false)
+2026-04-14T22:20:06.118+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status UP (replication=true)
+2026-04-14T22:20:24.516+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status DOWN (replication=false)
+2026-04-14T22:20:25.030+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status DOWN (replication=true)
+2026-04-14T22:20:38.498+05:30  INFO 10078 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 11
+2026-04-14T22:20:39.656+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:21:39.662+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:21:39.665+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2026-04-14T22:21:39.665+05:30  WARN 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for VET-SERVICE/localhost:vet-service:8083
+2026-04-14T22:21:39.667+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance VET-SERVICE/localhost:vet-service:8083 (replication=false)
+2026-04-14T22:22:39.668+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:22:39.671+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2026-04-14T22:22:39.671+05:30  WARN 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for VET-SERVICE/10.0.0.117:vet-service:8083
+2026-04-14T22:22:39.672+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance VET-SERVICE/10.0.0.117:vet-service:8083 (replication=false)
+2026-04-14T22:23:39.672+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T22:24:39.677+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:25:39.683+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:26:39.689+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:27:39.693+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T22:28:39.698+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:29:39.700+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T22:30:09.436+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:30:09.955+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:30:14.974+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:30:15.500+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:30:22.481+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=false)
+2026-04-14T22:30:22.990+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=true)
+2026-04-14T22:30:23.310+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:30:23.813+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:30:39.706+05:30  INFO 10078 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:30:51.597+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T22:30:51.843+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T22:30:51.844+05:30  WARN 10078 --- [discovery-server] [TaskBatchingWorker-target_localhost-15] c.n.eureka.cluster.ReplicationTask       : The replication of task CUSTOMER-SERVICE/10.0.0.117:customer-service:8082:Heartbeat@localhost failed with response code 409
+2026-04-14T22:30:51.844+05:30  WARN 10078 --- [discovery-server] [TaskBatchingWorker-target_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.0.0.117:customer-service:8082 My Timestamp : 1776173881885, Peer's timestamp: 1776186051581
+2026-04-14T22:30:51.844+05:30  INFO 10078 --- [discovery-server] [TaskBatchingWorker-target_localhost-15] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T22:31:23.404+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status DOWN (replication=false)
+2026-04-14T22:31:23.921+05:30  INFO 10078 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status DOWN (replication=true)
+2026-04-14T22:31:27.192+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-04-14T22:31:27.212+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2026-04-14T22:31:27.243+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-04-14T22:31:27.250+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-04-14T22:31:27.254+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2026-04-14T22:31:27.256+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2026-04-14T22:31:27.256+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2026-04-14T22:31:27.256+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2026-04-14T22:31:27.275+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-04-14T22:31:27.276+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-04-14T22:31:27.278+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-04-14T22:31:27.282+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-04-14T22:31:27.290+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-04-14T22:31:27.292+05:30  INFO 10078 --- [discovery-server] [RMI TCP Connection(269)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-04-14T22:35:21.233+05:30  INFO 16460 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 20.0.1 with PID 16460 (/Users/bhanukavitha/Desktop/13THAPRILUPDATED/discovery-server/target/classes started by bhanukavitha in /Users/bhanukavitha/Desktop/13THAPRILUPDATED/discovery-server)
+2026-04-14T22:35:21.234+05:30  INFO 16460 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-04-14T22:35:21.830+05:30  INFO 16460 --- [discovery-server] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fbd0a44d-f390-3015-8b0d-c9eb8b5c1d39
+2026-04-14T22:35:21.859+05:30  WARN 16460 --- [discovery-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-04-14T22:35:21.861+05:30  WARN 16460 --- [discovery-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-04-14T22:35:21.988+05:30  INFO 16460 --- [discovery-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-04-14T22:35:21.996+05:30  INFO 16460 --- [discovery-server] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-14T22:35:21.996+05:30  INFO 16460 --- [discovery-server] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-14T22:35:22.029+05:30  INFO 16460 --- [discovery-server] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-14T22:35:22.029+05:30  INFO 16460 --- [discovery-server] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 768 ms
+2026-04-14T22:35:22.531+05:30  INFO 16460 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-14T22:35:22.532+05:30  INFO 16460 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-14T22:35:22.638+05:30  INFO 16460 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-14T22:35:22.638+05:30  INFO 16460 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-14T22:35:23.121+05:30  WARN 16460 --- [discovery-server] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-14T22:35:23.132+05:30  INFO 16460 --- [discovery-server] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-14T22:35:23.148+05:30  INFO 16460 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-14T22:35:23.148+05:30  INFO 16460 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-04-14T22:35:23.154+05:30  INFO 16460 --- [discovery-server] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776186323154 with initial instances count: 0
+2026-04-14T22:35:23.175+05:30  INFO 16460 --- [discovery-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-04-14T22:35:23.176+05:30  INFO 16460 --- [discovery-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-04-14T22:35:23.253+05:30  INFO 16460 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-14T22:35:23.253+05:30  INFO 16460 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-14T22:35:23.253+05:30  INFO 16460 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-14T22:35:23.253+05:30  INFO 16460 --- [discovery-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-14T22:35:23.282+05:30  INFO 16460 --- [discovery-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-04-14T22:35:23.286+05:30  INFO 16460 --- [discovery-server] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-04-14T22:35:23.287+05:30  INFO 16460 --- [discovery-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-04-14T22:35:23.292+05:30  INFO 16460 --- [discovery-server] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2026-04-14T22:35:23.334+05:30  INFO 16460 --- [discovery-server] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-04-14T22:35:23.341+05:30  INFO 16460 --- [discovery-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-04-14T22:35:23.342+05:30  INFO 16460 --- [discovery-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-04-14T22:35:23.342+05:30  INFO 16460 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-04-14T22:35:23.342+05:30  INFO 16460 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-04-14T22:35:23.342+05:30  INFO 16460 --- [discovery-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-04-14T22:35:23.346+05:30  INFO 16460 --- [discovery-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path ''
+2026-04-14T22:35:23.346+05:30  INFO 16460 --- [discovery-server] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-04-14T22:35:23.346+05:30  INFO 16460 --- [discovery-server] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-04-14T22:35:23.364+05:30  INFO 16460 --- [discovery-server] [main] c.p.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 2.413 seconds (process running for 8.013)
+2026-04-14T22:35:23.934+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-14T22:35:23.935+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-14T22:35:23.936+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-14T22:35:41.814+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status UP (replication=false)
+2026-04-14T22:35:42.407+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status UP (replication=true)
+2026-04-14T22:36:02.409+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=false)
+2026-04-14T22:36:02.915+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status UP (replication=true)
+2026-04-14T22:36:18.277+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status UP (replication=false)
+2026-04-14T22:36:18.786+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status UP (replication=true)
+2026-04-14T22:36:23.348+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T22:36:37.983+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:36:38.497+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:36:53.031+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=false)
+2026-04-14T22:36:53.541+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status UP (replication=true)
+2026-04-14T22:37:23.352+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-04-14T22:38:23.356+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:39:23.362+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:40:23.368+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:41:23.371+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T22:42:23.377+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:43:23.381+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:44:23.387+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:45:23.393+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:46:23.398+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:46:26.243+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:46:26.760+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:46:31.967+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:46:32.495+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:46:57.569+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:46:58.089+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:46:59.755+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:47:00.266+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:47:06.139+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:47:06.655+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:47:11.110+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:47:11.620+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:47:23.405+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:48:09.049+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T22:48:09.562+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T22:48:14.029+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=false)
+2026-04-14T22:48:14.541+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status UP (replication=true)
+2026-04-14T22:48:23.410+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:49:23.426+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2026-04-14T22:50:23.303+05:30  INFO 16460 --- [discovery-server] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2026-04-14T22:50:23.429+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T22:51:23.446+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:52:23.452+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:53:23.458+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-04-14T22:54:23.459+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T22:55:23.462+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T22:56:23.469+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:57:23.471+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T22:58:23.477+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T22:59:23.478+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-14T23:00:23.481+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-04-14T23:01:23.488+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T23:02:23.494+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-04-14T23:02:57.377+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=false)
+2026-04-14T23:02:57.888+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.0.0.117:API-GATEWAY:8087 with status DOWN (replication=true)
+2026-04-14T23:03:15.875+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=false)
+2026-04-14T23:03:16.382+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VISIT-SERVICE/10.0.0.117:visit-service:8084 with status DOWN (replication=true)
+2026-04-14T23:03:20.388+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status DOWN (replication=false)
+2026-04-14T23:03:20.897+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance VET-SERVICE/10.0.0.117:vet-service:8083 with status DOWN (replication=true)
+2026-04-14T23:03:23.495+05:30  INFO 16460 --- [discovery-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-14T23:03:25.204+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=false)
+2026-04-14T23:03:25.710+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CUSTOMER-SERVICE/10.0.0.117:customer-service:8082 with status DOWN (replication=true)
+2026-04-14T23:03:30.262+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status DOWN (replication=false)
+2026-04-14T23:03:30.774+05:30  INFO 16460 --- [discovery-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.0.0.117:auth-service:8086 with status DOWN (replication=true)
+2026-04-14T23:03:34.785+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-04-14T23:03:34.799+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2026-04-14T23:03:34.829+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-04-14T23:03:34.834+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-04-14T23:03:34.836+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2026-04-14T23:03:34.837+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2026-04-14T23:03:34.838+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2026-04-14T23:03:34.838+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2026-04-14T23:03:34.857+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-04-14T23:03:34.857+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-04-14T23:03:34.858+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-04-14T23:03:34.862+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-04-14T23:03:34.881+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-04-14T23:03:34.883+05:30  INFO 16460 --- [discovery-server] [RMI TCP Connection(38)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

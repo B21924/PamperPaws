@@ -1,0 +1,46 @@
+<div class="appointments-page">
+
+  <button class="back-btn" (click)="goBack()">← Back</button>
+
+  <h2>Appointments 📅</h2>
+
+  <!-- FORM -->
+  <div class="form">
+
+    <input type="date"
+           [(ngModel)]="appointment.date"
+           [min]="todayDate()" />
+
+    <select [(ngModel)]="appointment.vetId" (change)="loadSlots()">
+      <option value="">Select Vet</option>
+      <option *ngFor="let vet of vets" [value]="vet.id">
+        {{ vet.name }} - {{ vet.specialization }}
+      </option>
+    </select>
+
+    <select [(ngModel)]="appointment.time">
+      <option value="">Select Time</option>
+      <option *ngFor="let slot of timeSlots" [value]="slot">
+        {{ slot }}
+      </option>
+    </select>
+
+    <input type="text"
+       [(ngModel)]="appointment.reason"
+       placeholder="Reason for visit" />
+
+
+    <button (click)="bookAppointment()">Book</button>
+  </div>
+
+  <!-- LIST -->
+  <div class="list">
+    <div class="card" *ngFor="let app of appointments">
+  <p><b>Date:</b> {{ app.visitDate }}</p>
+  <p><b>Time:</b> {{ app.timeSlot }}</p>
+  <p><b>Reason:</b> {{ app.reason }}</p>
+  <p><b>Vet:</b> {{ app.vetId }}</p> <!-- temporary -->
+</div>
+  </div>
+
+</div>

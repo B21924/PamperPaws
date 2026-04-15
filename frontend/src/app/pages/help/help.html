@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <h2 class="logo">
+  Pamper Paws <span class="paw">🐾</span>
+</h2>
+
+  <div class="nav-links">
+    <a routerLink="" class="nav-btn">Home</a>
+    <a routerLink="/login" class="nav-btn primary">Login / Register</a>
+  </div>
+</nav>
+<div class="help-container">
+  <h2>Help & Support 🐾</h2>
+
+  <div class="faq-item" *ngFor="let item of faqs; let i = index">
+
+  <div class="question" (click)="toggle(i)">
+    {{ item.question }}
+    <span [class.rotate]="item.open">▼</span>
+  </div>
+
+  <div class="answer" [class.show]="item.open">
+    {{ item.answer }}
+  </div>
+
+
+  </div>
+</div>
