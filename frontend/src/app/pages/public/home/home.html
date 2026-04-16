@@ -1,0 +1,95 @@
+<section class="marketing-shell">
+  <div class="marketing-hero">
+    <div class="eyebrow">Pet care operations, redesigned</div>
+    <h1>One polished platform for customers, vets, and admins.</h1>
+    <p>
+      Pamper Paws combines appointment booking, pet records, clinic operations,
+      and role-based dashboards into one calm, premium experience.
+    </p>
+
+    <div class="hero-actions">
+      <a class="primary-button" *ngIf="!session()" routerLink="/login">Sign in to continue</a>
+      <a class="primary-button" *ngIf="session()" [routerLink]="dashboardPath()">Open dashboard</a>
+      <a class="secondary-button" routerLink="/register">Create an account</a>
+    </div>
+
+    <div class="hero-metrics">
+      <article class="metric-card">
+        <strong>3</strong>
+        <span>role-aware experiences</span>
+      </article>
+      <article class="metric-card">
+        <strong>1</strong>
+        <span>shared source of truth</span>
+      </article>
+      <article class="metric-card">
+        <strong>24/7</strong>
+        <span>always-on appointment flow</span>
+      </article>
+    </div>
+  </div>
+
+  <div class="feature-showcase">
+    <article class="feature-panel highlight">
+      <span class="panel-label">Customer portal</span>
+      <h2>Confident booking and pet management</h2>
+      <p>
+        Customers can maintain pet records, upload pet photos, and book care
+        slots without fighting clunky forms.
+      </p>
+    </article>
+
+    <article class="feature-panel">
+      <span class="panel-label">Veterinary workspace</span>
+      <h2>Today’s schedule, availability, and profile in one place</h2>
+      <p>
+        Vets get fast access to appointments, workload, and availability
+        settings with a focused dashboard built around clinical flow.
+      </p>
+    </article>
+
+    <article class="feature-panel">
+      <span class="panel-label">Admin control</span>
+      <h2>Operational visibility without the noise</h2>
+      <p>
+        Admins can monitor customers, vets, and appointments from a single
+        control surface with strong information hierarchy.
+      </p>
+    </article>
+  </div>
+
+  <section class="marketing-grid">
+    <article class="story-card">
+      <h3>Role-based routing</h3>
+      <p>
+        After login, users land directly inside the experience that matches the
+        role in their JWT: customer, vet, or admin.
+      </p>
+    </article>
+    <article class="story-card">
+      <h3>Unified visual system</h3>
+      <p>
+        Shared typography, cards, forms, and layout patterns keep the full app
+        feeling intentional instead of pieced together.
+      </p>
+    </article>
+    <article class="story-card">
+      <h3>Data-backed workflows</h3>
+      <p>
+        The frontend is wired to the real services, not placeholder state, so
+        the experience matches actual system behavior.
+      </p>
+    </article>
+  </section>
+
+  <section class="cta-banner">
+    <div>
+      <span class="eyebrow">Ready to get started?</span>
+      <h2>Launch the pet care workspace your team deserves.</h2>
+    </div>
+    <div class="hero-actions">
+      <a class="primary-button" routerLink="/login">Log in</a>
+      <a class="secondary-button" routerLink="/contact">Talk to support</a>
+    </div>
+  </section>
+</section>

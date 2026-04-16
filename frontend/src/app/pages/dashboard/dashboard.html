@@ -1,0 +1,77 @@
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="left">
+    <span class="menu" (click)="toggleSidebar()">☰</span>
+    <h2 class="logo">Pamper Paws 🐾</h2>
+  </div>
+
+  <div class="right">
+    <span class="welcome">Welcome, {{ username }} 👋</span>
+
+    <div class="profile" (click)="toggleDropdown()">
+      <img src="https://i.pravatar.cc/40" class="profile-pic" />
+
+      <div class="dropdown" *ngIf="showDropdown">
+        <button (click)="goToProfile()">View Profile</button>
+        <button (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" [class.open]="showSidebar">
+  <span class="close-btn" (click)="toggleSidebar()">✖</span>
+  <p (click)="goToAppointments()">Appointments</p>
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" *ngIf="showSidebar" (click)="toggleSidebar()"></div>
+
+<!-- MAIN -->
+<div class="dashboard">
+
+  <!-- PET HEADER -->
+  <div class="pets-header">
+    <h3>Your Pets 🐾</h3>
+    <button class="add-btn" (click)="showAddPet = true">+ Add Pet</button>
+  </div>
+
+  <!-- ADD PET FORM -->
+  <div *ngIf="showAddPet" class="add-pet-form">
+    <input [(ngModel)]="newPet.name" placeholder="Name" />
+    <input [(ngModel)]="newPet.type" placeholder="Breed" />
+    <input type="number" [(ngModel)]="newPet.age" placeholder="Age" />
+
+    <button type="button" (click)="addPet()">Save</button>
+  </div>
+
+  <!-- PET LIST -->
+  <div class="pets">
+    <div class="pet-card" *ngFor="let pet of pets; let i = index">
+      <h4>{{ pet.name }}</h4>
+      <p>Breed: {{ pet.type }}</p>
+      <p>Age: {{ pet.age }}</p>
+
+      <div class="actions">
+        <button class="edit-btn" (click)="editPet(i)">Edit</button>
+        <button class="delete-btn" (click)="deletePet(pet.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="appointments-section">
+  <h3>Upcoming Appointments 📅</h3>
+
+  <div class="appointment-card" *ngFor="let app of appointments">
+
+    <p><b>Date:</b> {{ app.visitDate }}</p>
+    <p><b>Time:</b> {{ app.timeSlot }}</p>
+    <p><b>Reason:</b> {{ app.reason }}</p>
+    <p><b>Vet:</b> {{ app.vetId }}</p>
+
+  </div>
+</div>
+
+</div>
