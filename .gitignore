@@ -1,1 +1,18 @@
 /.metadata/
+
+# Mac
+.DS_Store
+
+# Logs
+logs/
+*.log
+*.gz
+
+# Sonar
+.sonarlint/
+
+# Java build
+target/
+
+# Node
+node_modules/
