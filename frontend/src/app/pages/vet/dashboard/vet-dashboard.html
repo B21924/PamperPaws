@@ -10,7 +10,7 @@
     </div>
   </div>
 
-  <div class="dashboard-grid three">
+  <div class="dashboard-grid four">
     <article class="stat-card">
       <span>Total appointments</span>
       <strong>{{ appointments().length }}</strong>
@@ -25,6 +25,17 @@
       <span>Upcoming</span>
       <strong>{{ upcomingAppointments().length }}</strong>
       <small>Future visits after today</small>
+    </article>
+    <article class="stat-card highlight">
+      <span>Next appointment</span>
+      <ng-container *ngIf="nextAppointment() as next; else noNextVetVisit">
+        <strong>{{ customerName(next.customerId) }}</strong>
+        <small>{{ next.visitDate | date: 'MMM d' }} at {{ next.timeSlot }}</small>
+      </ng-container>
+      <ng-template #noNextVetVisit>
+        <strong>Schedule clear</strong>
+        <small>No future appointment is waiting right now.</small>
+      </ng-template>
     </article>
   </div>
 

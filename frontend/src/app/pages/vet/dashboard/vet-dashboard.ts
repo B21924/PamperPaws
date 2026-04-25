@@ -7,6 +7,7 @@ import { CustomerDataService } from '../../../services/customer-data';
 import { SessionAuthService } from '../../../services/session-auth';
 import { VetDataService } from '../../../services/vet-data';
 import { VisitDataService } from '../../../services/visit-data';
+import { appointmentDateTimeValue, getAppointmentStatus } from '../../../utils/appointment-ui';
 
 @Component({
   selector: 'app-vet-dashboard',
@@ -29,14 +30,17 @@ export class VetDashboardComponent {
   readonly todaysAppointments = computed(() =>
     this.appointments()
       .filter((visit) => visit.visitDate === this.today)
-      .sort((left, right) => left.timeSlot.localeCompare(right.timeSlot)),
+      .sort((left, right) => appointmentDateTimeValue(left) - appointmentDateTimeValue(right)),
   );
   readonly upcomingAppointments = computed(() =>
     this.appointments()
-      .filter((visit) => visit.visitDate > this.today)
-      .sort((left, right) =>
-        `${left.visitDate}-${left.timeSlot}`.localeCompare(`${right.visitDate}-${right.timeSlot}`),
-      ),
+      .filter((visit) => getAppointmentStatus(visit) === 'Upcoming')
+      .sort((left, right) => appointmentDateTimeValue(left) - appointmentDateTimeValue(right)),
+  );
+  readonly nextAppointment = computed(() =>
+    [...this.appointments()]
+      .filter((visit) => getAppointmentStatus(visit) !== 'Completed')
+      .sort((left, right) => appointmentDateTimeValue(left) - appointmentDateTimeValue(right))[0] ?? null,
   );
 
   constructor() {
@@ -49,6 +53,14 @@ export class VetDashboardComponent {
 
   customerPhone(customerId: number) {
     return this.customerDirectory()[customerId]?.phone ?? 'Not available';
+  }
+
+  appointmentSummary(visit: Visit | null) {
+    if (!visit) {
+      return 'No visit ready to review.';
+    }
+
+    return `${this.customerName(visit.customerId)} · ${visit.visitDate} at ${visit.timeSlot}`;
   }
 
   private loadData() {

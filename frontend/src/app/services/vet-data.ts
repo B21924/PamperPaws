@@ -25,6 +25,10 @@ export class VetDataService {
     return this.http.put<Vet>(`${this.baseUrl}/vets/${id}`, payload);
   }
 
+  deleteVet(id: number) {
+    return this.http.delete<void>(`${this.baseUrl}/vets/${id}`);
+  }
+
   getSlots(vetId: number, date: string) {
     return this.http.get<string[]>(`${this.baseUrl}/vets/${vetId}/slots?date=${date}`);
   }

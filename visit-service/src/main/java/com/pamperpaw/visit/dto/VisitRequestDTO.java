@@ -13,6 +13,9 @@ public class VisitRequestDTO {
     @NotNull(message = "Vet ID is required")
     private Long vetId;
 
+    @NotNull(message = "Pet ID is required")
+    private Long petId;
+
     @NotBlank(message = "Visit date is required")
     private String visitDate;
 

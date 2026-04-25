@@ -25,6 +25,10 @@ export class CustomerDataService {
     return this.http.put<Customer>(`${this.baseUrl}/customers/${id}`, payload);
   }
 
+  deleteCustomer(id: number) {
+    return this.http.delete<void>(`${this.baseUrl}/customers/${id}`);
+  }
+
   getPets(customerId: number) {
     return this.http.get<Pet[]>(`${this.baseUrl}/pets/customer/${customerId}`);
   }

@@ -2,6 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 
+import { AppModalComponent } from '../../../shared/components/app-modal/app-modal';
 import { Customer, Pet } from '../../../models/app.models';
 import { CustomerDataService } from '../../../services/customer-data';
 import { SessionAuthService } from '../../../services/session-auth';
@@ -9,7 +10,7 @@ import { SessionAuthService } from '../../../services/session-auth';
 @Component({
   selector: 'app-customer-pets',
   standalone: true,
-  imports: [ReactiveFormsModule, NgFor, NgIf],
+  imports: [ReactiveFormsModule, NgFor, NgIf, AppModalComponent],
   templateUrl: './customer-pets.html',
 })
 export class CustomerPetsComponent {
@@ -20,6 +21,7 @@ export class CustomerPetsComponent {
   readonly customer = signal<Customer | null>(null);
   readonly pets = signal<Pet[]>([]);
   readonly currentPetId = signal<number | null>(null);
+  readonly selectedPet = signal<Pet | null>(null);
   readonly previewUrl = signal('');
   readonly statusMessage = signal('');
   readonly errorMessage = signal('');
@@ -105,6 +107,14 @@ export class CustomerPetsComponent {
       next: () => this.loadPets(),
       error: () => this.errorMessage.set('Unable to delete that pet right now.'),
     });
+  }
+
+  openPetDetails(pet: Pet) {
+    this.selectedPet.set(pet);
+  }
+
+  closePetDetails() {
+    this.selectedPet.set(null);
   }
 
   private loadData() {

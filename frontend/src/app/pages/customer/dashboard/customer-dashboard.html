@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div class="dashboard-grid three">
+  <div class="dashboard-grid four">
     <article class="stat-card">
       <span>Total pets</span>
       <strong>{{ pets().length }}</strong>
@@ -29,6 +29,17 @@
       <span>Upcoming</span>
       <strong>{{ upcomingAppointments().length }}</strong>
       <small>Upcoming visits ready to attend</small>
+    </article>
+    <article class="stat-card highlight">
+      <span>Next appointment</span>
+      <ng-container *ngIf="nextAppointment() as next; else noNextVisit">
+        <strong>{{ petName(next.petId) }}</strong>
+        <small>{{ vetDirectory()[next.vetId]?.name || ('Vet #' + next.vetId) }} · {{ next.timeSlot }}</small>
+      </ng-container>
+      <ng-template #noNextVisit>
+        <strong>You’re all set!</strong>
+        <small>No upcoming visit is on the calendar.</small>
+      </ng-template>
     </article>
   </div>
 
@@ -59,7 +70,7 @@
 
       <ng-template #noPets>
         <div class="empty-state">
-          <strong>No pets added yet</strong>
+          <strong>No pets added yet 🐾</strong>
           <span>Start by creating a pet profile with photo, breed, and age.</span>
         </div>
       </ng-template>
@@ -90,7 +101,7 @@
 
       <ng-template #noAppointments>
         <div class="empty-state compact">
-          <strong>No upcoming appointments</strong>
+          <strong>You’re all set!</strong>
           <span>Book a visit whenever your pet needs consultation or follow-up care.</span>
         </div>
       </ng-template>

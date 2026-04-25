@@ -23,6 +23,7 @@ export interface Customer {
 
 export interface Pet {
   id: number;
+  customerId?: number;
   name: string;
   type: string;
   age: number;
@@ -46,9 +47,11 @@ export interface Visit {
   id: number;
   customerId: number;
   vetId: number;
+  petId?: number;
   visitDate: string;
   timeSlot: string;
   reason: string;
+  notes?: string;
 }
 
 export interface RegisterAuthPayload {
@@ -101,6 +104,7 @@ export interface PetPayload {
 export interface VisitPayload {
   customerId: number;
   vetId: number;
+  petId?: number;
   visitDate: string;
   timeSlot: string;
   reason: string;

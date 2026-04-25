@@ -8,6 +8,7 @@ import { CustomerDataService } from '../../../services/customer-data';
 import { SessionAuthService } from '../../../services/session-auth';
 import { VetDataService } from '../../../services/vet-data';
 import { VisitDataService } from '../../../services/visit-data';
+import { appointmentDateTimeValue, getAppointmentStatus } from '../../../utils/appointment-ui';
 
 @Component({
   selector: 'app-customer-dashboard',
@@ -26,15 +27,16 @@ export class CustomerDashboardComponent {
   readonly pets = signal<Pet[]>([]);
   readonly appointments = signal<Visit[]>([]);
   readonly vetDirectory = signal<Record<number, Vet>>({});
+  readonly petDirectory = signal<Record<number, Pet>>({});
 
   readonly upcomingAppointments = computed(() =>
     [...this.appointments()]
-      .filter((visit) => visit.visitDate >= new Date().toISOString().split('T')[0])
-      .sort((left, right) =>
-        `${left.visitDate}-${left.timeSlot}`.localeCompare(`${right.visitDate}-${right.timeSlot}`),
-      )
+      .filter((visit) => getAppointmentStatus(visit) !== 'Completed')
+      .sort((left, right) => appointmentDateTimeValue(left) - appointmentDateTimeValue(right))
       .slice(0, 4),
   );
+
+  readonly nextAppointment = computed(() => this.upcomingAppointments()[0] ?? null);
 
   constructor() {
     this.loadDashboard();
@@ -58,6 +60,12 @@ export class CustomerDashboardComponent {
           next: ({ pets, appointments, vets }) => {
             this.pets.set(pets);
             this.appointments.set(appointments);
+            this.petDirectory.set(
+              pets.reduce<Record<number, Pet>>((accumulator, pet) => {
+                accumulator[pet.id] = pet;
+                return accumulator;
+              }, {}),
+            );
             this.vetDirectory.set(
               vets.reduce<Record<number, Vet>>((accumulator, vet) => {
                 accumulator[vet.id] = vet;
@@ -71,5 +79,14 @@ export class CustomerDashboardComponent {
       },
       error: () => this.loading.set(false),
     });
+  }
+
+  petName(petId?: number) {
+    if (!petId) {
+      return 'Pet details unavailable';
+    }
+
+    const normalizedPetId = Number(petId);
+    return this.petDirectory()[normalizedPetId]?.name ?? `Pet #${normalizedPetId}`;
   }
 }

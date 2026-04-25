@@ -63,7 +63,7 @@
       </div>
 
       <div class="pet-grid" *ngIf="pets().length; else noSavedPets">
-        <article class="pet-card-large" *ngFor="let pet of pets()">
+        <article class="pet-card-large interactive-card" *ngFor="let pet of pets()" (click)="openPetDetails(pet)">
           <div class="pet-media large" *ngIf="pet.imageUrl; else petFallback">
             <img [src]="pet.imageUrl" [alt]="pet.name" />
           </div>
@@ -76,18 +76,52 @@
             <small>{{ pet.age }} years old</small>
           </div>
           <div class="card-actions">
-            <button class="secondary-button small" type="button" (click)="editPet(pet)">Edit</button>
-            <button class="ghost-button small danger" type="button" (click)="deletePet(pet)">Delete</button>
+            <button class="secondary-button small" type="button" (click)="editPet(pet); $event.stopPropagation()">Edit</button>
+            <button class="ghost-button small danger" type="button" (click)="deletePet(pet); $event.stopPropagation()">Delete</button>
           </div>
         </article>
       </div>
 
       <ng-template #noSavedPets>
         <div class="empty-state">
-          <strong>No pets stored yet</strong>
+          <strong>No pets added yet 🐾</strong>
           <span>Create your first pet profile to start booking visits with the right context.</span>
         </div>
       </ng-template>
     </article>
   </div>
+
+  <app-modal
+    [open]="!!selectedPet()"
+    title="Pet profile"
+    eyebrow="Companion details"
+    [compact]="true"
+    (close)="closePetDetails()"
+  >
+    <div class="modal-stack" *ngIf="selectedPet() as pet">
+      <div class="pet-profile-modal">
+        <div class="pet-profile-image" *ngIf="pet.imageUrl; else modalPetPlaceholder">
+          <img [src]="pet.imageUrl" [alt]="pet.name" />
+        </div>
+        <ng-template #modalPetPlaceholder>
+          <div class="pet-profile-image placeholder">{{ pet.name.charAt(0) }}</div>
+        </ng-template>
+
+        <div class="info-stack">
+          <div>
+            <strong>Name</strong>
+            <span>{{ pet.name }}</span>
+          </div>
+          <div>
+            <strong>Breed or type</strong>
+            <span>{{ pet.type }}</span>
+          </div>
+          <div>
+            <strong>Age</strong>
+            <span>{{ pet.age }} years old</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </app-modal>
 </section>

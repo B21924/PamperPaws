@@ -20,4 +20,12 @@ export class VisitDataService {
   getVisitsByVet(vetId: number) {
     return this.http.get<Visit[]>(`${this.baseUrl}/vet/${vetId}`);
   }
+
+  getVisitsByPet(petId: number) {
+    return this.http.get<Visit[]>(`${this.baseUrl}/pet/${petId}`);
+  }
+
+  deleteVisit(id: number) {
+    return this.http.delete<void>(`${this.baseUrl}/${id}`);
+  }
 }

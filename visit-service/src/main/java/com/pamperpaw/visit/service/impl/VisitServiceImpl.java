@@ -32,6 +32,7 @@ public class VisitServiceImpl implements VisitService {
         Visit visit = new Visit();
         visit.setCustomerId(dto.getCustomerId());
         visit.setVetId(dto.getVetId());
+        visit.setPetId(dto.getPetId());
         visit.setVisitDate(dto.getVisitDate());
         visit.setTimeSlot(dto.getTimeSlot()); 
         visit.setReason(dto.getReason());
@@ -93,6 +94,16 @@ public class VisitServiceImpl implements VisitService {
                 .toList();
     }
 
+    @Override
+    public List<VisitResponseDTO> getVisitsByPet(Long petId) {
+        log.info("Fetching visits for petId={}", petId);
+
+        return visitRepository.findByPetId(petId)
+                .stream()
+                .map(this::mapToResponse)
+                .toList();
+    }
+
     private void validateReferences(Long customerId, Long vetId) {
         try {
             customerClient.getCustomerById(customerId);
@@ -112,6 +123,7 @@ public class VisitServiceImpl implements VisitService {
         response.setId(visit.getId());
         response.setCustomerId(visit.getCustomerId());
         response.setVetId(visit.getVetId());
+        response.setPetId(visit.getPetId());
         response.setVisitDate(visit.getVisitDate());
         response.setReason(visit.getReason());
         response.setTimeSlot(visit.getTimeSlot());

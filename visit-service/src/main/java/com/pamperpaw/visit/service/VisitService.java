@@ -23,5 +23,7 @@ public interface VisitService {
 
     List<VisitResponseDTO> getVisitsByVet(Long vetId);
 
+    List<VisitResponseDTO> getVisitsByPet(Long petId);
+
     List<VisitResponseDTO> getVisitsByVetAndDate(Long vetId, String date);
 }

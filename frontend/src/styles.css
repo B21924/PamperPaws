@@ -338,6 +338,13 @@ p {
   color: var(--ink-700);
 }
 
+.field small,
+.field-help {
+  color: var(--ink-500);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
 .field input,
 .field textarea,
 .field select {
@@ -475,6 +482,16 @@ p {
   border: 1px solid rgba(148, 163, 184, 0.16);
 }
 
+.interactive-card {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(15, 118, 110, 0.28);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
 .pet-tile,
 .pet-card-large {
   grid-template-columns: auto 1fr;
@@ -550,6 +567,235 @@ p {
 
 .empty-state.compact {
   padding: 1rem;
+}
+
+.filter-chip-row,
+.table-actions,
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.filter-chip-row {
+  margin-bottom: 1rem;
+}
+
+.filter-chip {
+  min-height: 2.45rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 999px;
+  background: white;
+  color: var(--ink-700);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+.filter-chip:hover,
+.filter-chip.active {
+  transform: translateY(-1px);
+}
+
+.filter-chip.active {
+  background: linear-gradient(135deg, var(--brand-500), var(--brand-700));
+  color: white;
+  box-shadow: 0 12px 28px rgba(15, 118, 110, 0.2);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.status-badge.completed {
+  background: rgba(100, 116, 139, 0.12);
+  color: var(--ink-600);
+}
+
+.status-badge.today {
+  background: rgba(21, 128, 61, 0.14);
+  color: var(--success);
+}
+
+.status-badge.upcoming {
+  background: rgba(14, 116, 144, 0.14);
+  color: #0369a1;
+}
+
+.appointment-list {
+  gap: 0.85rem;
+}
+
+.appointment-card {
+  align-items: start;
+}
+
+.appointment-card-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.85rem;
+  margin-bottom: 0.45rem;
+}
+
+.pet-picker {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.pet-picker-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: center;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.78);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.pet-picker-card:hover,
+.pet-picker-card.selected {
+  transform: translateY(-1px);
+  border-color: rgba(15, 118, 110, 0.28);
+}
+
+.pet-picker-card.selected {
+  box-shadow: 0 16px 30px rgba(15, 118, 110, 0.12);
+}
+
+.modal-shell {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgba(15, 23, 42, 0.46);
+  backdrop-filter: blur(10px);
+  animation: modal-fade 180ms ease;
+}
+
+.modal-card {
+  width: min(100%, 820px);
+  max-height: min(88vh, 920px);
+  overflow: auto;
+  padding: 1.5rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow-strong);
+  animation: modal-rise 220ms ease;
+}
+
+.modal-card.compact {
+  width: min(100%, 640px);
+}
+
+.modal-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.modal-close {
+  min-height: 2.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--brand-700);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-body,
+.modal-stack,
+.pet-profile-modal,
+.pet-spotlight {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.detail-panel {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  background: rgba(248, 250, 252, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.detail-panel.soft {
+  align-content: start;
+  background: rgba(15, 118, 110, 0.06);
+}
+
+.section-header.tight {
+  margin-bottom: 0;
+}
+
+.pet-profile-image {
+  overflow: hidden;
+  border-radius: 1.35rem;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.22), rgba(234, 88, 12, 0.18));
+}
+
+.pet-profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pet-profile-image.placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--brand-700);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+@keyframes modal-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .sticky-form {
@@ -711,5 +957,15 @@ p {
   .bar-row,
   .pet-card-large {
     grid-template-columns: 1fr;
+  }
+
+  .detail-split,
+  .appointment-card-header {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .modal-card {
+    padding: 1.15rem;
   }
 }
